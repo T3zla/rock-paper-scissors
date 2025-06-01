@@ -1,0 +1,19 @@
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Node.js (only if you add npm packages later)
+node_modules/
+
+# Logs
+*.log
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+
+# Environment files
+.env

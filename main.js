@@ -1,4 +1,3 @@
-// This function generates the computer's choice of ROCK, PAPER or SCISSORS, it returns a string
 
 function getComputerChoice(){
     let computerChoice = '';
@@ -13,10 +12,12 @@ function getComputerChoice(){
     return computerChoice;
 }
 
-// This function receives the Human Choice, it returns the Human Choice as  a capitalised string.
-
 function getHumanChoice(){
-    let humanChoice = prompt("Please choose, Rock, Paper, or Scissors: ");
+    let humanChoice = prompt("Please choose, Rock, Paper, or Scissors: ").toUpperCase();
+
+    while ( humanChoice !== "ROCK" && humanChoice !== "PAPER" && humanChoice !== "SCISSORS"){
+      humanChoice = prompt("Invalid Choice, please choose Rock, Paper or Scissors!").toUpperCase();
+    }
     return humanChoice;
 }
 
